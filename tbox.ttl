@@ -1,0 +1,108 @@
+@prefix ex: <http://example.org/ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+qb:Observation a rdfs:Class .
+
+ex:age a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer .
+
+ex:ageStartedDrinking a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer .
+
+ex:ageStartedSmoking a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer .
+
+ex:annualIncomeUSD a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal .
+
+ex:attemptsToQuitDrinking a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer .
+
+ex:attemptsToQuitSmoking a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer .
+
+ex:bmi a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal .
+
+ex:childrenCount a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer .
+
+ex:city a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:string .
+
+ex:country a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:string .
+
+ex:dietQuality a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:string .
+
+ex:drinksPerWeek a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer .
+
+ex:educationLevel a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:string .
+
+ex:employmentStatus a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:string .
+
+ex:exerciseFrequency a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:string .
+
+ex:gender a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:string .
+
+ex:hasHealthIssues a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:boolean .
+
+ex:maritalStatus a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:string .
+
+ex:mentalHealthStatus a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:string .
+
+ex:name a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:string .
+
+ex:personID a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer .
+
+ex:sleepHours a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:decimal .
+
+ex:smokesPerDay a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:integer .
+
+ex:socialSupport a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:string .
+
+ex:therapyHistory a rdf:Property ;
+    rdfs:domain qb:Observation ;
+    rdfs:range xsd:string .
+
